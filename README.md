@@ -2,7 +2,7 @@
 
 javascript 실습 내용을 기록한 repo다.<br />
 
-08장 DOM
+08장 DOM<br />
 product-result.html<br />
 js/product.js<br />
 domNode.html<br />
@@ -13,7 +13,7 @@ register.html, register.js<br />
   일을 할 때는 그냥 html를 기입하는데, 여기는 javascript로 노드를 만들고 연결관계를 만든다.<br />
 nodeList.html<br />
 
-09장 FORM
+09장 FORM<br />
   이번에는 내가 직접 작업한 것만 폴더에 넣었다. (그래서 이번에는 뭘 작업했나 따로 여기에 적지 않았다.)<br />
   08장에 이어서 FORM를 통해 사이트를 살펴보는 방법이 주된 내용이다.<br />
   또한 대체로 id가 없을 경우, name를 대신 사용하는 방법이다.<br />
