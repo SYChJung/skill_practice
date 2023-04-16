@@ -1,0 +1,34 @@
+
+// product-result.html
+	document.querySelector("#heading").style.color = "white";
+	document.querySelector("#heading").style.backgroundColor = "gray";
+
+
+// domNode.html
+	// <p class="accent">주문이 완료되었습니다.</p>
+	var newP = document.createElement("p");
+	var newText = document.createTextNode("주문이 완료되었습니다.");
+	newP.appendChild(newText);
+	document.body.appendChild(newP);
+
+	var attr = document.createAttribute("class");
+	attr.value = "accent";
+	newP.setAttributeNode(attr);
+	newP.setAttribute("class", "accent");
+
+	var easys = document.createAttribute("id");
+	easys.value = "doit_js";
+
+// nodeList.html
+	document.querySelectorAll("p");
+	document.querySelectorAll("p")[0];
+	document.querySelectorAll("p")[0].hasChildNodes();
+	document.querySelector("#nameList").childNodes;
+	var nameList = document.querySelector("#nameList");
+	nameList.insertBefore(nameList.children[2], nameList.children[0]);
+
+	document.querySelectorAll(".del")[0].parentNode;
+	document.querySelectorAll("p")[0].parentNode;
+	var firstDel = document.querySelectorAll(".del")[0];
+	var firstP = document.querySelectorAll("p")[0];
+	firstP.removeChild(firstDel);

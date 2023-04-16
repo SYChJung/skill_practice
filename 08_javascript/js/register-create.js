@@ -1,3 +1,4 @@
+
 function newRegister() {						
 	var newP = document.createElement("p");  // 새 p 요소 만들기 
 	var userName = document.querySelector("#userName");					

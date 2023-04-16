@@ -1,0 +1,17 @@
+
+// order.html
+	document.querySelector("#billingName");
+	document.querySelector("#billingName").value;
+	document.querySelector("#billingTel").value;
+
+	document.ship.shippingName;
+	document.forms["ship"].elements["shippingName"];
+	document.ship.shippingName.value;
+	document.ship.shippingAddr.value;
+	document.forms["ship"].elements["shippingAddr"];
+
+// reg.html
+	document.forms;
+	document.forms[0].elements;
+	document.forms[0].elements[0].value;
+	document.forms[0].elements[1].value;
