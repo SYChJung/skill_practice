@@ -15,3 +15,20 @@
 	document.forms[0].elements;
 	document.forms[0].elements[0].value;
 	document.forms[0].elements[1].value;
+
+// getForm.html
+	document.testForm.major;
+	document.testForm.major.options;
+	document.testForm.major.options[4];
+	document.testForm.major.options[4].innerText;
+	document.testForm.major.options[4].value;
+	document.testForm.major.options.selectedIndex;
+
+	document.testForm.subject;
+	document.testForm.mailing1;
+	document.testForm.subject[0].checked;
+	document.testForm.subject[1].checked;
+	document.testForm.mailing1.checked;
+	document.testForm.mailing2.checked;
+
+
