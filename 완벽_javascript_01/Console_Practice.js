@@ -1,0 +1,2 @@
+// Terminal
+$ node snippet.js
