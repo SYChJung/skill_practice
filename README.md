@@ -55,6 +55,35 @@ javascript 실습 내용을 기록한 repo다.<br />
 이 탓에 0.1를 정확히 계산하는 것이 아니라 근사값을 산출한 것이고, 이 탓에 0.3 - 0.2와 0.2 - 0.1이 같지 않았다. 따라서, 소수점이 있는 값들의 차이를 서로 비교할 수가 없다.<br />
 (책에서는 정수로 바꿔서 계산할 것을 추천한다.)<br />
 
+### 04장 표현식과 연산자
+내용 자체는 이미 알고 있지만 하나하나 그 원리와 의미, 사용법들을 알려주고 있다. 덕분에 이 알던 표현식의 원리를 더 깊게 이해하고, 다른 방식의 사용법을 알 수 있었다.<br />
+
+?:연산자의 경우,<br />
+
+> greeting = "hello "
+> if (username) {
+>  greeting += username;
+>} else {
+>  greeting += "there"
+> }
+
+를<br />
+> greeting = "hello " + (username ? username : "there")
+
+으로, 축약할 수 있다.
+
+and 연산자, xor 연산자, ?? 연산자의 경우,<br />
+
+> let max = maxWidth || preference.maxWidth || 500;
+
+max에 maxWidth 값이 falsy, 즉 false 취급을 받는 0, "", 미정의값을 뜻하는 null이나 undefined가 아니라면 그 값을 사용하고, preference.maxWidth 값이 falsy가 아니라면 그 값을 사용하고, 만약 maxWidth이나 preference.maxWidth 둘 다 falsy라면 max 값을 500으로 정의한다. xor 연산자에서 왼쪽부터 값이 null이나 undefined인지의 여부를 살펴보는데, 이를 이용한 것이다.<br />
+
+> let max = maxWidth ?? preference.maxWidth ?? 500;
+
+|| 연산자가 falsy의 여부를 판단한다면, ?? 연사자는 미정의값인 null이나 undefined의 여부를 판단한다. 따라서 위의 표현식은 max에 maxWidth 값이 정의되어 있으면 그 값을 사용하고, preference.maxWidth 값이 정의되어 있다면 그 값을 사용하고, 만약 maxWidth이나 preference.maxWidth 둘 다 미정의값이라면 값을 500으로 정의한다.<br />
+
+이런 표현 모두 간단하지만, 그 동안 여러 줄의 코드의 if문으로 쓰던 소스를 간략하게 정리할 수 있다.<br />
+
 ## javascript_중급
 ### 01 인터렉티브 자바스크립트
 해당 실습들은 주로 자바스크립트를 통해 화면에서 할 수 있는 각종 이벤트와 이벤트를 통해 부여할 수 있는 여러 기능을 다뤘다.<br />
