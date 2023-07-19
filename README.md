@@ -114,3 +114,9 @@ push, pop처럼 array에 값을 넣거나 값을 넣지만, push, pop과 다르�
 > isNaN, Number.isNaN
 
 해당 과정에서는 isNaN와 Number.isNaN에 큰 비중을 할애했다. isNaN는 숫자나 숫자로 변환할 수 없는 값을 NaN으로 판별하고, Number.isNaN는 주어진 값이 NaN인지 아닌지를 판별한다. NaN의 판별 여부는 (ECMAScript 2015에서 추가된) Number.isNaN이 더 엄격하게 수행한다.<br />
+
+
+## ES6 문법과 함께하는 모던 javascript 중급 Part.2
+해당 과정은 txt 파일로 json 구조로 된 데이터를 만들고, html 파일로 기본적인 웹 구조를 만들고, js 파일에서 ajax를 이용해서 데이터와 웹을 연결하고 웹 개발하는 실습 위주로 되어 있습니다.<br />
+
+다만 해당 교육 과정에서는 ajax 연결을 위해서 Chrome 대상 속성에서 ' --disable-web-security --user-data-dir="c:\chrome" '를 지우도록 하는데, 컴퓨터 내의 데이터를 ajax로 가져올 때 보안상 막히지 않게 하기 위함이라고 합니다. 하지만 저는 이게 보안상 좋다고 생각하지 않고, 단순히 로컬 상으로 데이터를 가져오기 위해 이렇게할 필요가 없다고 생각해서 이 방법을 쓰지 않았습니다. 대신 localhost를 써서 더 안전하고 편리하게 작업을 했습니다.<br />

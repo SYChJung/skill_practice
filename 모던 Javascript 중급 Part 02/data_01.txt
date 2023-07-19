@@ -1,0 +1,27 @@
+[
+	{
+		"id": 0,
+		"title": "불국사",
+		"description": "한국의 유명한 사찰"
+	},
+	{
+		"id": 1,
+		"title": "독도",
+		"description": "한국의 유명한 섬"
+	},
+	{
+		"id": 3,
+		"title": "경복궁",
+		"description": "한국의 유명한 궁궐"
+	},
+	{
+		"id": 4,
+		"title": "강릉",
+		"description": "한국의 해안도시"
+	},
+	{
+		"id": 5,
+		"title": "제주도",
+		"description": "한국의 가장 큰 섬"
+	}
+]
