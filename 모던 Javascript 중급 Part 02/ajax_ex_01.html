@@ -12,13 +12,33 @@
 	</head>
 	<body>
 		<h2>외국인이 가장 좋아하는 한국 관광 명소</h2>
-		<button type="button" onclick="loadTouristAttractions()">관광명소 데이터 가져오기</button>
+
 		<!-- <div id="main"></div> -->
+		<button type="button" onclick="loadTouristAttractions()">관광명소 데이터 가져오기</button>
 		<table id="tourlist" width="100%">
 			<tr>
 				<th>관광명소</th>
 				<th>설명</th>
 			</tr>
 		</table>
+
+		<button type="button" onclick="loadData()">클릭하세요!</button>
+
+		<h2>Ajax Exam Fetch API</h2>
+		<!-- 
+		<button type="button" onclick="loadButton('course01.txt')">Course 01</button>
+		<button type="button" onclick="loadButton('course02.txt')">Course 02</button>
+		<button type="button" onclick="loadButton('course03.txt')">Course 03</button>
+		-->
+		<div id="menu">
+		</div>
+
+		<div class="menuListDetail">
+		</div>
+
+		<!-- <h2>Await</h2> -->
+		<button onclick="loadButtonA('await.txt', 'await2.txt');">클릭하세요!</button>
+		<h3></h3>
+		<div class="dyContents"></div>
 	</body>
 </html>
