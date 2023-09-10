@@ -122,3 +122,17 @@ push, pop처럼 array에 값을 넣거나 값을 넣지만, push, pop과 다르�
 다만 해당 교육 과정에서는 ajax 연결을 위해서 Chrome 대상 속성에서 ' --disable-web-security --user-data-dir="c:\chrome" '를 지우도록 하는데, 컴퓨터 내의 데이터를 ajax로 가져올 때 보안상 막히지 않게 하기 위함이라고, 하지만 나는 이게 보안상 좋다고 생각하지 않고, 단순히 로컬 상으로 데이터를 가져오기 위해 이렇게할 필요가 없다고 생각해서 이 방법을 쓰지 않았다. 대신 localhost를 써서 더 안전하고 편리하게 작업을 했다.<br />
 
 모던 Javascript 중급 Part 02 폴더에 작업한 ajax 예제가 있다. 여러 텍스트 파일에서 데이터를 읽어와서 필요한 곳에 각 데이터 별로 배치한다. 기본적인 구조는 내가 작업했던 웹 개발의 구조: 정보를 조회해서 이를 추력하는 것과 비슷하다. 사실 이게 가장 기초적인 형태의 웹 개발이고, 다른 웹 개발이 여기서 발전한 것이다.<br />
+
+
+## HTML/CSS 웹 퍼블리싱
+이 과정은 크게 HTML에 대한 실습과 CSS의 설명으로 이루어져 있다.<br />
+
+"HTML/CSS 웹 퍼블리싱" 폴더에 HTML의 실습을 수행하며 만든 결과물이 있다. (해당 실습 내용도 localhost를 사용해서 작업했다.) HTML와 CSS 모두 기본적인 내용이지만, 이전에 미흡했던 부분들을 공부할 수 있었다.<br />
+
+HTML의 경우, div 테이블 구조 등 이해가 덜 했던 부분을 보완할 수 있었다.<br />
+CSS의 경우, css cascade 구조를 통해서, 여러 단계에서 작성된 CSS값 중 어느 것이 사용되고 어느 것이 사용되지 않는지 배울 수 있던 점이 컸다.<br />
+
+> https://specificity.keegan.st/
+> https://www.omnicalculator.com/statistics/sensitivity-and-specificity
+
+위의 사이트들은 이른바 Specificity Calculator 사이트로, css cascade 순서를 직접 계산할 수 있어, 만약 여러 CSS값들을 고려해야할 경우 이를 계산할 수 있다.<br />
