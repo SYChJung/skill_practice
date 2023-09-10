@@ -4,9 +4,9 @@ javascript 실습 내용을 기록한 repo다.<br />
 
 ## Do it 자바스크립트 입문
 ### 08장 DOM
-> product-result.html
-> js/product.js
-> domNode.html
+> product-result.html<br />
+> js/product.js<br />
+> domNode.html<br />
 > register.html, register.js<br />
 
 참석자 명단 작성. imput 박스에 참석자의 이름을 기입하고, 기입된 이름들을 imput 박스 아래에 표시.<br />
@@ -34,18 +34,18 @@ javascript 실습 내용을 기록한 repo다.<br />
 
 ### 02장 어휘 구조
 세미클론, 줄바꿈을 비롯해서 자바스크립트 언어의 어법을 다루고 있다. 많이 간과되거나 생각하지도 못했던 위험 요소도 다루고 있는데, 대표적으로:<br />
-> let y = x + f
-> (a+b).toString()
+> let y = x + f<br />
+> (a+b).toString()<br />
 
 처럼 세미클론없이 줄바꿈을 할 경우,<br />
-> let y = x + f(a+b).toString();
+> let y = x + f(a+b).toString();<br />
 
 으로 인식되거나,<br />
 > return<br />
 > true<br />
 
 를<br />
-> return; true;
+> return; true;<br />
 
 으로 인식될 위험이 있다. 자바스크립트는 기본적으로 줄바꿈과 공백을 인지하지 않으니 세미클론으로 구분하지 않으면 위와 같은 문제들이 생길 수 있다.<br />
 
@@ -60,25 +60,25 @@ javascript 실습 내용을 기록한 repo다.<br />
 
 ?:연산자의 경우,<br />
 
-> greeting = "hello "
-> if (username) {
->  greeting += username;
->} else {
->  greeting += "there"
-> }
+> greeting = "hello "<br />
+> if (username) {<br />
+>  greeting += username;<br />
+>} else {<br />
+>  greeting += "there"<br />
+> }<br />
 
 를<br />
-> greeting = "hello " + (username ? username : "there")
+> greeting = "hello " + (username ? username : "there")<br />
 
 으로, 축약할 수 있다.
 
 and 연산자, xor 연산자, ?? 연산자의 경우,<br />
 
-> let max = maxWidth || preference.maxWidth || 500;
+> let max = maxWidth || preference.maxWidth || 500;<br />
 
 max에 maxWidth 값이 falsy, 즉 false 취급을 받는 0, "", 미정의값을 뜻하는 null이나 undefined가 아니라면 그 값을 사용하고, preference.maxWidth 값이 falsy가 아니라면 그 값을 사용하고, 만약 maxWidth이나 preference.maxWidth 둘 다 falsy라면 max 값을 500으로 정의한다. xor 연산자에서 왼쪽부터 값이 null이나 undefined인지의 여부를 살펴보는데, 이를 이용한 것이다.<br />
 
-> let max = maxWidth ?? preference.maxWidth ?? 500;
+> let max = maxWidth ?? preference.maxWidth ?? 500;<br />
 
 || 연산자가 falsy의 여부를 판단한다면, ?? 연사자는 미정의값인 null이나 undefined의 여부를 판단한다. 따라서 위의 표현식은 max에 maxWidth 값이 정의되어 있으면 그 값을 사용하고, preference.maxWidth 값이 정의되어 있다면 그 값을 사용하고, 만약 maxWidth이나 preference.maxWidth 둘 다 미정의값이라면 값을 500으로 정의한다.<br />
 
@@ -107,11 +107,11 @@ max에 maxWidth 값이 falsy, 즉 false 취급을 받는 0, "", 미정의값을 
 ## ES6 문법과 함께하는 모던 javascript 중급 Part.1
 해당 과정도 이렇다할 실습은 없고 javascript의 기초적인 내용을 다루고 있다. 대체로 아는 내용이지만, 유용한 내용도 있다.<br />
 
-> shift, unshift
+> shift, unshift<br />
 
 push, pop처럼 array에 값을 넣거나 값을 넣지만, push, pop과 다르게 array 앞에서 추가 혹은 추출한다.<br />
 
-> isNaN, Number.isNaN
+> isNaN, Number.isNaN<br />
 
 해당 과정에서는 isNaN와 Number.isNaN에 큰 비중을 할애했다. isNaN는 숫자나 숫자로 변환할 수 없는 값을 NaN으로 판별하고, Number.isNaN는 주어진 값이 NaN인지 아닌지를 판별한다. NaN의 판별 여부는 (ECMAScript 2015에서 추가된) Number.isNaN이 더 엄격하게 수행한다.<br />
 
@@ -132,7 +132,7 @@ push, pop처럼 array에 값을 넣거나 값을 넣지만, push, pop과 다르�
 HTML의 경우, div 테이블 구조 등 이해가 덜 했던 부분을 보완할 수 있었다.<br />
 CSS의 경우, css cascade 구조를 통해서, 여러 단계에서 작성된 CSS값 중 어느 것이 사용되고 어느 것이 사용되지 않는지 배울 수 있던 점이 컸다.<br />
 
-> https://specificity.keegan.st/
-> https://www.omnicalculator.com/statistics/sensitivity-and-specificity
+> https://specificity.keegan.st/<br />
+> https://www.omnicalculator.com/statistics/sensitivity-and-specificity<br />
 
 위의 사이트들은 이른바 Specificity Calculator 사이트로, css cascade 순서를 직접 계산할 수 있어, 만약 여러 CSS값들을 고려해야할 경우 이를 계산할 수 있다.<br />
